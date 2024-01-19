@@ -174,13 +174,18 @@ body {
 	box-shadow: 0 0 20px #999;
 }
 
-.sj-book .p1,
+
 .sj-book .p111,
-.sj-book .p112 {
+.sj-book .p112 { 
 	background-color: white;
-	background-image: url(../pics/book-covers.jpg) !important;
+	background-image: url(../pics/back-cover.png) !important;
 }
 
+
+.sj-book .p1{
+	background-color: white;
+	background-image: url(../pics/book-covers.jpg) !important;	
+}
 
 .sj-book .p1 {
 	background-position: 0 0;
