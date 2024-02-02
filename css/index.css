@@ -597,3 +597,47 @@ input[type="text"] {
 	margin-bottom: 20px;
 }
 
+.highlight {
+	animation: highlightAnimation 8s infinite linear forwards;
+}
+
+@keyframes highlightAnimation {
+	0% {
+		background-color: transparent;
+	}
+	50% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: yellow;
+	}
+}
+
+#highlight-me{
+	text-decoration: underline;
+}
+.centered-button {
+	position: absolute;
+	left: 40%;
+	bottom: 50%;
+	display: block;
+	padding: 10px;
+	background-color: #032023;
+	color: #FFF;
+	border: 1px solid #FFF; /* Initial white border color */
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .centered-button:hover {
+	background-color: yellow;
+	color: black;
+	border-color: black; /* Change to black border color on hover */
+  }
+  
+  .sj-book .p21 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

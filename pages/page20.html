@@ -1,20 +1,28 @@
 <div class="book-content">
-
-
-<p class="no-indent">
-Jobs. Steve was impressed. He did not know much about engineering, but he could see
-there was a demand for having a computer to write software for, a computer for software hobbyists. He was especially excited to see that a lot
-of the qualified engineers at Homebrew were talking about Woz’s computer with admiration. So he suggested to sell it to them. He and Woz would
-assemble the computers themselves and sell the whole board at Homebrew meetings.
-</p>
-
-<h2>“Our own company”</h2>
-
-<blockquote>
-Steve had a good argument. We were in his car and he said — and I can remember him saying this like it was yesterday: “Well, even if we lose money, we’ll have a company. For once in our lives, we’ll have a company.” That convinced me. And I was excited to think about us like that. To be two best friends starting a company.
-</blockquote>
-
-<cite>Steve Wozniak in iWoz</cite>
-
+    <button class="centered-button" onclick="typeWriter()">Don't click me</button>
+    <p id="demo"></p>
 </div>
+<script>
+    var i = 0;
+    var speed = 35;
+    var txt = "hi sunshine, im glad you found this page, i wrote this to confess my feelings for you and let you know how much you mean to me.\n\nyour beauty,\ni'm gonna say this straight, you are really cute, especially if mo smile ka (bagay kaayo sa imong mata). chikka lang katong namukid ta, you were looking at the sky while i was looking at you. you are indeed the scenery i will never get tired of looking at. lately, every time i see you, complete na ako day.\n\nyour genuine personality,\nso many people enjoy being in your company, and i don’t know if you have realized, but you also bring out the best in them (including me).  it's one of the 2147483647 reasons why i like you.  and, the thing is, you did all of this by just being simply who you are. i hope you also know that you deserve all the good things the world has to offer.  you’ve got the kindest heart, and you’ve always put other people before you.";
+    function typeWriter() {
+        document.querySelector('.centered-button').style.display = 'none';
+        if (i < txt.length) {
+            var char = txt.charAt(i);
+            if (char === '\n') {
+                document.getElementById("demo").innerHTML += '<br>';
+            } else {
+                document.getElementById("demo").innerHTML += char;
+            }
+            i++;
+            setTimeout(typeWriter, speed);
+        } else {
+            // Display the tldr element once typeWriter is done
+            document.getElementById("tldr").style.display = 'block';
+        }
+    }
+</script>
 <span class="page-number">20</span>
+
+

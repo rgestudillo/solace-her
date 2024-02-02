@@ -17,6 +17,7 @@
 	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
 	<script src="js/firebase-config.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	
 </head>
 
 <body>
@@ -184,6 +185,12 @@
 				pages: 112,
 				when: {
 					turning: function (e, page, view) {
+						console.log("turned");
+						var sunshineSpan = document.getElementById("sunshine");
+						
+						if (sunshineSpan) {
+							sunshineSpan.classList.remove("highlight");
+						}
 
 						var book = $(this),
 							currentPage = book.turn('page'),
@@ -295,8 +302,8 @@
 		yepnope({
 			test: Modernizr.csstransforms,
 			yep: ['./lib/turn.min.js'],
-			nope: ['./lib/turn.html4.min.js', 'css/jquery.ui.html4.css', 'css/steve-jobs-html4.css'],
-			both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
+			nope: ['./lib/turn.html4.min.js', 'css/jquery.ui.html4.css', 'css/index-html4.css'],
+			both: ['js/index.js', 'css/jquery.ui.css', 'css/index.css'],
 			complete: loadApp
 		});
 
