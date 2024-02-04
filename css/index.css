@@ -175,8 +175,8 @@ body {
 }
 
 
-.sj-book .p111,
-.sj-book .p112 { 
+.sj-book .p27,
+.sj-book .p28 { 
 	background-color: white;
 	background-image: url(../pics/back-cover.png) !important;
 }
@@ -263,11 +263,11 @@ body {
 	content: "For Sunshine";
 }
 
-.sj-book .p111 {
+.sj-book .p27 {
 	background-position: -960px 0 !important;
 }
 
-.sj-book .p112 {
+.sj-book .p28 {
 	background-position: -1440px 0 !important;
 }
 
@@ -628,15 +628,16 @@ input[type="text"] {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  }
+}
   
-  .centered-button:hover {
+.centered-button:hover {
 	background-color: yellow;
 	color: black;
 	border-color: black; /* Change to black border color on hover */
-  }
+}
   
-  .sj-book .p21 {
+.sj-book .p26,
+.sj-book .p21{
 	display: flex;
 	align-items: center;
 	justify-content: center;
