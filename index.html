@@ -21,15 +21,10 @@
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 </head>
-<script>
-	$(window).on('load', function () {
-		$('#loading').hide();
-	}) 
-</script>
 
 <body>
-	<div id="loading">
-		<img id="loading-image" src="pics/happy.jpg" alt="Loading..." />
+	<div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
 	<div id="canvas">
 		<div id="book-zoom">
@@ -316,6 +311,12 @@
 			complete: loadApp
 		});
 
+	</script>
+
+	<script>
+		$(window).on("load", function () {
+			$(".loader-wrapper").fadeOut("slow");
+		});
 	</script>
 
 </body>
