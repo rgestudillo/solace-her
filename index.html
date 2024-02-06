@@ -21,8 +21,16 @@
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 </head>
+<script>
+	$(window).on('load', function () {
+		$('#loading').hide();
+	}) 
+</script>
 
 <body>
+	<div id="loading">
+		<img id="loading-image" src="pics/happy.jpg" alt="Loading..." />
+	</div>
 	<div id="canvas">
 		<div id="book-zoom">
 			<div class="sj-book">
