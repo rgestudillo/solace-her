@@ -23,9 +23,10 @@
 </head>
 
 <body>
-	<div class="loader-wrapper">
-		<span class="loader"><span class="loader-inner"></span></span>
+	<div id="loading">
+		<img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." />
 	</div>
+
 	<div id="canvas">
 		<div id="book-zoom">
 			<div class="sj-book">
@@ -315,7 +316,7 @@
 
 	<script>
 		$(window).on("load", function () {
-			$(".loader-wrapper").fadeOut("slow");
+			$("#loading").fadeOut("slow");
 		});
 	</script>
 
